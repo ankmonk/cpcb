@@ -1,0 +1,82 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f8fafc; /* soft light gray */
+  color: #1e293b;      /* slate gray for text */
+}
+
+header, footer {
+  text-align: center;
+  padding: 1rem;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+footer {
+  border-top: 1px solid #e2e8f0;
+  margin-top: 2rem;
+}
+
+h1 {
+  margin: 0.5rem 0;
+  font-weight: 600;
+  color: #0f172a; /* dark navy */
+}
+
+main.home {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+.card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  color: #0f172a;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: 0.3s;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  background: #f1f5f9;
+}
+
+label {
+  font-weight: 600;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+select {
+  font-size: 1rem;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+  outline: none;
+  margin: 1rem;
+  background: white;
+}
+
+#plots {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+#plots > div {
+  background: #ffffff;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
